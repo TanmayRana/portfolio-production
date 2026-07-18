@@ -5,7 +5,11 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchWorkExperienceData, saveWorkExperienceData, deleteWorkExperienceData } from "@/lib/store/workExperienceSlice";
+import {
+  fetchWorkExperienceData,
+  saveWorkExperienceData,
+  deleteWorkExperienceData,
+} from "./workExperienceReducer";
 
 export interface WorkExperience {
   id: string;
@@ -38,7 +42,7 @@ export type WorkExpFormValues = z.infer<typeof workExperienceSchema>;
 
 export function useWorkExperienceAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: experiences, status } = useSelector((state: RootState) => state.workExperience);
+  const { data: experiences, status } = useSelector((state: RootState) => (state as any).adminWorkExperience || state.workExperience);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   

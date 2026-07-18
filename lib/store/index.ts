@@ -1,13 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import heroReducer from "./heroSlice";
-import aboutReducer from "./aboutSlice";
-import contactReducer from "./contactSlice";
-import resumeReducer from "./resumeSlice";
-import projectsReducer from "./projectsSlice";
-import certificationsReducer from "./certificationsSlice";
-import skillsReducer from "./skillsSlice";
-import workExperienceReducer from "./workExperienceSlice";
-import myExperienceReducer from "./myExperienceSlice";
+import heroReducer from "@/containers/admin/home/heroReducer";
+import aboutReducer from "@/containers/admin/about/aboutReducer";
+import contactReducer from "@/containers/admin/contact/contactReducer";
+import resumeReducer from "@/containers/admin/resume/resumeReducer";
+import projectsReducer from "@/containers/admin/projects/projectsReducer";
+import certificationsReducer from "@/containers/admin/certifications/certificationsReducer";
+import skillsReducer from "@/containers/admin/skills/skillsReducer";
+import workExperienceReducer from "@/containers/admin/work-experience/workExperienceReducer";
+import myExperienceReducer from "@/containers/admin/my-experience/myExperienceReducer";
+import homeReducer from "@/containers/home/homeReducer";
 
 export const store = configureStore({
   reducer: {
@@ -20,18 +21,9 @@ export const store = configureStore({
     skills: skillsReducer,
     workExperience: workExperienceReducer,
     myExperience: myExperienceReducer,
+    home: homeReducer,
   },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
-
-export * from "./heroSlice";
-export * from "./aboutSlice";
-export * from "./contactSlice";
-export * from "./resumeSlice";
-export * from "./projectsSlice";
-export * from "./certificationsSlice";
-export * from "./skillsSlice";
-export * from "./workExperienceSlice";
-export * from "./myExperienceSlice";

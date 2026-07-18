@@ -12,7 +12,7 @@ import { Briefcase, Calendar, MapPin, Star, ChevronRight } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "@/lib/store";
-import { fetchWorkExperienceData } from "@/lib/store/workExperienceSlice";
+import { fetchWorkExperienceData } from "@/containers/admin/work-experience/workExperienceReducer";
 
 /* ── Helpers ── */
 function formatPeriod(start: string, end: string | null) {

@@ -1,4 +1,4 @@
-import HeroContainer from "@/containers/home/HeroContainer";
+import HeroContainer from "@/containers/home";
 import AboutContainer from "@/containers/home/AboutContainer";
 import Skills from "@/components/sections/Skills";
 import MyExpertise from "@/components/sections/MyExpertise";

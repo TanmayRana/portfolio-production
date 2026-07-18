@@ -5,8 +5,8 @@ import * as React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchHeroData } from "@/lib/store/heroSlice";
-import { fetchContactData } from "@/lib/store/contactSlice";
+import { fetchHeroData } from "@/containers/admin/home/heroReducer";
+import { fetchContactData } from "@/containers/admin/contact/contactReducer";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Cpu,

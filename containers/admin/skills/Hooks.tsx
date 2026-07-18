@@ -3,7 +3,15 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchSkillsData, addCategoryData, deleteCategoryData, addSkillData, deleteSkillData, updateCategoryData, updateSkillData } from "@/lib/store/skillsSlice";
+import {
+  fetchSkillsData,
+  addCategoryData,
+  deleteCategoryData,
+  addSkillData,
+  deleteSkillData,
+  updateCategoryData,
+  updateSkillData,
+} from "./skillsReducer";
 
 export interface SkillCategory {
   id: string;
@@ -21,7 +29,7 @@ export interface Skill {
 
 export function useSkillsAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: categories } = useSelector((state: RootState) => state.skills);
+  const { data: categories } = useSelector((state: RootState) => (state as any).adminSkills || state.skills);
   
   const [isCatOpen, setIsCatOpen] = useState(false);
   const [isSkillOpen, setIsSkillOpen] = useState(false);

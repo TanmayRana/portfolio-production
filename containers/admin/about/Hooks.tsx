@@ -5,7 +5,7 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchAboutData, submitAboutForm } from "@/lib/store/aboutSlice";
+import { fetchAboutData, submitAboutForm } from "./aboutReducer";
 
 export const aboutSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -17,7 +17,7 @@ export type AboutFormValues = z.infer<typeof aboutSchema>;
 
 export function useAboutAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: aboutData, status } = useSelector((state: RootState) => state.about);
+  const { data: aboutData, status } = useSelector((state: RootState) => (state as any).adminAbout || state.about);
   const isSaving = status === "loading";
   const [initialLoaded, setInitialLoaded] = useState(false);
 

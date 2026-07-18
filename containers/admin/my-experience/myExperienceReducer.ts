@@ -1,4 +1,10 @@
-import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import {
+  fetchMyExperienceDataAPI,
+  addMyExperienceAPI,
+  updateMyExperienceAPI,
+  deleteMyExperienceAPI,
+} from "./myExperienceAPI";
 
 export interface MyExperience {
   id: string;
@@ -21,55 +27,48 @@ interface MyExperienceState {
   data: MyExperience[];
 }
 
-export const fetchMyExperienceData = createAsyncThunk("myExperience/fetch", async () => {
-  const res = await fetch("/api/admin/my-experience");
-  if (!res.ok) throw new Error("Failed to fetch my experience data");
-  return await res.json();
+export const fetchMyExperienceData = createAsyncThunk("adminMyExperience/fetch", async (_, { rejectWithValue }) => {
+  try {
+    const data = await fetchMyExperienceDataAPI();
+    return data;
+  } catch (err: any) {
+    return rejectWithValue(err.message || "Failed to fetch my experience data");
+  }
 });
 
 export const addMyExperience = createAsyncThunk(
-  "myExperience/add",
-  async (data: MyExperienceFormData) => {
-    const res = await fetch("/api/admin/my-experience", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    if (!res.ok) {
-      const resData = await res.json();
-      throw new Error(resData.error || "Failed to add experience");
+  "adminMyExperience/add",
+  async (data: MyExperienceFormData, { rejectWithValue }) => {
+    try {
+      const res = await addMyExperienceAPI(data);
+      return res;
+    } catch (err: any) {
+      return rejectWithValue(err || "Failed to add experience");
     }
-    return await res.json();
   }
 );
 
 export const updateMyExperience = createAsyncThunk(
-  "myExperience/update",
-  async (data: { id: string } & MyExperienceFormData) => {
-    const res = await fetch("/api/admin/my-experience", {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    if (!res.ok) {
-      const resData = await res.json();
-      throw new Error(resData.error || "Failed to update experience");
+  "adminMyExperience/update",
+  async (data: { id: string } & MyExperienceFormData, { rejectWithValue }) => {
+    try {
+      const res = await updateMyExperienceAPI(data);
+      return res;
+    } catch (err: any) {
+      return rejectWithValue(err || "Failed to update experience");
     }
-    return await res.json();
   }
 );
 
 export const deleteMyExperience = createAsyncThunk(
-  "myExperience/delete",
-  async (id: string) => {
-    const res = await fetch(`/api/admin/my-experience?id=${id}`, {
-      method: "DELETE",
-    });
-    if (!res.ok) {
-      const resData = await res.json();
-      throw new Error(resData.error || "Failed to delete experience");
+  "adminMyExperience/delete",
+  async (id: string, { rejectWithValue }) => {
+    try {
+      await deleteMyExperienceAPI(id);
+      return id;
+    } catch (err: any) {
+      return rejectWithValue(err || "Failed to delete experience");
     }
-    return id;
   }
 );
 
@@ -79,8 +78,8 @@ const initialState: MyExperienceState = {
   data: [],
 };
 
-const myExperienceSlice = createSlice({
-  name: "myExperience",
+const adminMyExperienceSlice = createSlice({
+  name: "adminMyExperience",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -97,7 +96,7 @@ const myExperienceSlice = createSlice({
       })
       .addCase(addMyExperience.rejected, (state, action) => {
         state.status = "error";
-        state.message = action.error.message || "Error adding";
+        state.message = (action.payload as any)?.message || "Error adding";
       })
       .addCase(updateMyExperience.pending, (state) => {
         state.status = "loading";
@@ -111,7 +110,7 @@ const myExperienceSlice = createSlice({
       })
       .addCase(updateMyExperience.rejected, (state, action) => {
         state.status = "error";
-        state.message = action.error.message || "Error updating";
+        state.message = (action.payload as any)?.message || "Error updating";
       })
       .addCase(deleteMyExperience.fulfilled, (state, action) => {
         state.data = state.data.filter((item) => item.id !== action.payload);
@@ -119,4 +118,4 @@ const myExperienceSlice = createSlice({
   },
 });
 
-export default myExperienceSlice.reducer;
+export default adminMyExperienceSlice.reducer;

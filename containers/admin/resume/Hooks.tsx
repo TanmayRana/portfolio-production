@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchResumeData, saveResumeData, deleteResumeData, ResumeData } from "@/lib/store/resumeSlice";
+import { fetchResumeData, saveResumeData, deleteResumeData, ResumeData } from "./resumeReducer";
 
 export type Resume = ResumeData;
 
 export function useResumeAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: resume, status } = useSelector((state: RootState) => state.resume);
+  const { data: resume, status } = useSelector((state: RootState) => (state as any).adminResume || state.resume);
   const isSaving = status === "loading";
 
   const [fileUrlInput, setFileUrlInput] = useState("");

@@ -329,7 +329,7 @@ import React, { useEffect, useState, useRef, useTransition } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "@/lib/store";
-import { fetchContactData } from "@/lib/store/contactSlice";
+import { fetchContactData } from "@/containers/admin/contact/contactReducer";
 import { sendContactEmail } from "@/app/actions/contactMessage";
 import {
   MapPin,

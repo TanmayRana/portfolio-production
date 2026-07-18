@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
+import { fetchHeroDataAPI, submitHeroFormAPI } from "./heroAPI";
 
 /* ── Types ─────────────────────────────────────────────── */
 export interface HeroFormData {
@@ -20,30 +21,24 @@ interface HeroState {
 export const submitHeroForm = createAsyncThunk<
   { success: boolean; message: string; data?: HeroFormData; errors?: Record<string, string[]> },
   HeroFormData
->("hero/submit", async (data) => {
-  const res = await fetch("/api/admin/hero", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-  const resData = await res.json();
-  if (!res.ok) {
-    throw new Error(resData.error || "Failed to submit");
+>("adminHero/submit", async (data, { rejectWithValue }) => {
+  try {
+    const resData = await submitHeroFormAPI(data);
+    return { success: true, message: "Success", data: resData };
+  } catch (error: any) {
+    return rejectWithValue(error || "Failed to submit");
   }
-  return { success: true, message: "Success", data: resData };
 });
 
 export const fetchHeroData = createAsyncThunk<HeroFormData | null>(
-  "hero/fetch",
-  async () => {
-    const res = await fetch("/api/admin/hero");
-    if (!res.ok) {
-      throw new Error("Failed to fetch hero data");
+  "adminHero/fetch",
+  async (_, { rejectWithValue }) => {
+    try {
+      const data = await fetchHeroDataAPI();
+      return data;
+    } catch (error: any) {
+      return rejectWithValue(error || "Failed to fetch hero data");
     }
-    const data = await res.json();
-    return data;
   }
 );
 
@@ -55,8 +50,8 @@ const initialState: HeroState = {
   data: null,
 };
 
-const heroSlice = createSlice({
-  name: "hero",
+const adminHeroSlice = createSlice({
+  name: "adminHero",
   initialState,
   reducers: {
     resetHeroState(state) {
@@ -85,7 +80,7 @@ const heroSlice = createSlice({
       })
       .addCase(submitHeroForm.rejected, (state, action) => {
         state.status = "error";
-        state.message = action.error.message ?? "Something went wrong.";
+        state.message = (action.payload as any)?.message ?? "Something went wrong.";
         state.errors = {};
       })
       .addCase(fetchHeroData.fulfilled, (state, action) => {
@@ -96,5 +91,5 @@ const heroSlice = createSlice({
   },
 });
 
-export const { resetHeroState, setHeroData } = heroSlice.actions;
-export default heroSlice.reducer;
+export const { resetHeroState, setHeroData } = adminHeroSlice.actions;
+export default adminHeroSlice.reducer;

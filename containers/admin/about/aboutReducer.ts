@@ -1,4 +1,5 @@
-import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { fetchAboutDataAPI, submitAboutFormAPI } from "./aboutAPI";
 
 export interface AboutFormData {
   name: string;
@@ -13,25 +14,24 @@ interface AboutState {
   data: AboutFormData | null;
 }
 
-export const fetchAboutData = createAsyncThunk("about/fetch", async () => {
-  const res = await fetch("/api/admin/about");
-  if (!res.ok) throw new Error("Failed to fetch about data");
-  return await res.json();
+export const fetchAboutData = createAsyncThunk("adminAbout/fetch", async (_, { rejectWithValue }) => {
+  try {
+    const data = await fetchAboutDataAPI();
+    return data;
+  } catch (err: any) {
+    return rejectWithValue(err.message || "Failed to fetch about data");
+  }
 });
 
 export const submitAboutForm = createAsyncThunk(
-  "about/submit",
-  async (data: AboutFormData) => {
-    const res = await fetch("/api/admin/about", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    if (!res.ok) {
-      const resData = await res.json();
-      throw new Error(resData.error || "Failed to submit");
+  "adminAbout/submit",
+  async (data: AboutFormData, { rejectWithValue }) => {
+    try {
+      const res = await submitAboutFormAPI(data);
+      return res;
+    } catch (err: any) {
+      return rejectWithValue(err || "Failed to submit");
     }
-    return await res.json();
   }
 );
 
@@ -41,8 +41,8 @@ const initialState: AboutState = {
   data: null,
 };
 
-const aboutSlice = createSlice({
-  name: "about",
+const adminAboutSlice = createSlice({
+  name: "adminAbout",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -59,9 +59,9 @@ const aboutSlice = createSlice({
       })
       .addCase(submitAboutForm.rejected, (state, action) => {
         state.status = "error";
-        state.message = action.error.message || "Error saving";
+        state.message = (action.payload as any)?.message || "Error saving";
       });
   },
 });
 
-export default aboutSlice.reducer;
+export default adminAboutSlice.reducer;

@@ -5,7 +5,11 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchCertificationsData, saveCertificationData, deleteCertificationData } from "@/lib/store/certificationsSlice";
+import {
+  fetchCertificationsData,
+  saveCertificationData,
+  deleteCertificationData,
+} from "./certificationsReducer";
 
 export interface Certification {
   id: string;
@@ -32,7 +36,7 @@ export type CertFormValues = z.infer<typeof certSchema>;
 
 export function useCertificationsAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: certifications } = useSelector((state: RootState) => state.certifications);
+  const { data: certifications } = useSelector((state: RootState) => (state as any).adminCertifications || state.certifications);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
 

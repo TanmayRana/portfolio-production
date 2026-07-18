@@ -15,7 +15,7 @@ import { Plus, Edit, Trash } from "lucide-react";
 import FormDialog from "@/components/admin/FormDialog";
 import ImageUploader from "@/components/admin/ImageUploader";
 import { ExperienceFormValues } from "@/containers/admin/my-experience/Hooks";
-import { MyExperience } from "@/lib/store/myExperienceSlice";
+import { MyExperience } from "@/containers/admin/my-experience/myExperienceReducer";
 import ConfirmDeleteDialog from "@/components/admin/ConfirmDeleteDialog";
 
 interface MyExperienceComponentProps {

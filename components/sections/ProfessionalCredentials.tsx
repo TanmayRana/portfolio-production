@@ -10,7 +10,7 @@ import {
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "@/lib/store";
-import { fetchCertificationsData } from "@/lib/store/certificationsSlice";
+import { fetchCertificationsData } from "@/containers/admin/certifications/certificationsReducer";
 import Link from "next/link";
 
 /* ─── 3D flip badge card ─── */

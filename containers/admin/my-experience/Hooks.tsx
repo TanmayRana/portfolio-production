@@ -5,7 +5,13 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchMyExperienceData, addMyExperience, updateMyExperience, deleteMyExperience, MyExperience } from "@/lib/store/myExperienceSlice";
+import {
+  fetchMyExperienceData,
+  addMyExperience,
+  updateMyExperience,
+  deleteMyExperience,
+  MyExperience,
+} from "./myExperienceReducer";
 
 export const experienceSchema = z.object({
   title: z.string().min(2, "Title is required"),
@@ -18,7 +24,7 @@ export type ExperienceFormValues = z.infer<typeof experienceSchema>;
 
 export function useMyExperienceAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: experiences, status } = useSelector((state: RootState) => state.myExperience);
+  const { data: experiences, status } = useSelector((state: RootState) => (state as any).adminMyExperience || state.myExperience);
   
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -36,7 +42,7 @@ export function useMyExperienceAdmin() {
     try {
       // Check for duplicate order
       const duplicateOrder = experiences?.find(
-        (exp) => exp.order === data.order && exp.id !== editingId
+        (exp: MyExperience) => exp.order === data.order && exp.id !== editingId
       );
 
       if (duplicateOrder) {

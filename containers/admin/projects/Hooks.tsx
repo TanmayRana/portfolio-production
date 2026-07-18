@@ -5,7 +5,7 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchProjectsData, saveProjectData, deleteProjectData } from "@/lib/store/projectsSlice";
+import { fetchProjectsData, saveProjectData, deleteProjectData } from "./projectsReducer";
 
 export interface Project {
   id: string;
@@ -30,7 +30,7 @@ export type ProjectFormValues = z.infer<typeof projectSchema>;
 
 export function useProjectsAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: projects } = useSelector((state: RootState) => state.projects);
+  const { data: projects } = useSelector((state: RootState) => (state as any).adminProjects || state.projects);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
 

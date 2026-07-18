@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { fetchContactDataAPI, submitContactFormAPI } from "./contactAPI";
 
 export interface ContactFormData {
   email: string;
@@ -16,25 +17,24 @@ interface ContactState {
   data: ContactFormData | null;
 }
 
-export const fetchContactData = createAsyncThunk("contact/fetch", async () => {
-  const res = await fetch("/api/admin/contact");
-  if (!res.ok) throw new Error("Failed to fetch contact data");
-  return await res.json();
+export const fetchContactData = createAsyncThunk("adminContact/fetch", async (_, { rejectWithValue }) => {
+  try {
+    const data = await fetchContactDataAPI();
+    return data;
+  } catch (err: any) {
+    return rejectWithValue(err.message || "Failed to fetch contact data");
+  }
 });
 
 export const submitContactForm = createAsyncThunk(
-  "contact/submit",
-  async (data: ContactFormData) => {
-    const res = await fetch("/api/admin/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    if (!res.ok) {
-      const resData = await res.json();
-      throw new Error(resData.error || "Failed to submit");
+  "adminContact/submit",
+  async (data: ContactFormData, { rejectWithValue }) => {
+    try {
+      const res = await submitContactFormAPI(data);
+      return res;
+    } catch (err: any) {
+      return rejectWithValue(err || "Failed to submit contact data");
     }
-    return await res.json();
   }
 );
 
@@ -44,8 +44,8 @@ const initialState: ContactState = {
   data: null,
 };
 
-const contactSlice = createSlice({
-  name: "contact",
+const adminContactSlice = createSlice({
+  name: "adminContact",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -59,7 +59,7 @@ const contactSlice = createSlice({
       })
       .addCase(fetchContactData.rejected, (state, action) => {
         state.status = "error";
-        state.message = action.error.message || "Error fetching";
+        state.message = (action.payload as any)?.message || "Error fetching";
       })
       .addCase(submitContactForm.pending, (state) => {
         state.status = "loading";
@@ -70,9 +70,9 @@ const contactSlice = createSlice({
       })
       .addCase(submitContactForm.rejected, (state, action) => {
         state.status = "error";
-        state.message = action.error.message || "Error saving";
+        state.message = (action.payload as any)?.message || "Error saving";
       });
   },
 });
 
-export default contactSlice.reducer;
+export default adminContactSlice.reducer;

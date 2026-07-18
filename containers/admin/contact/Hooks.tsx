@@ -5,7 +5,7 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { fetchContactData, submitContactForm } from "@/lib/store/contactSlice";
+import { fetchContactData, submitContactForm } from "./contactReducer";
 
 export const contactSchema = z.object({
   email: z.string().email("Invalid email address"),
@@ -20,7 +20,7 @@ export type ContactFormValues = z.infer<typeof contactSchema>;
 
 export function useContactAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const { data: contactData, status } = useSelector((state: RootState) => state.contact);
+  const { data: contactData, status } = useSelector((state: RootState) => (state as any).adminContact || state.contact);
   const isSaving = status === "loading";
   const initialLoaded = status !== "idle";
 

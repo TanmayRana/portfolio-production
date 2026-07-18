@@ -5,7 +5,7 @@ import * as z from "zod";
 import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/store";
-import { setHeroData, fetchHeroData } from "@/lib/store/heroSlice";
+import { setHeroData, fetchHeroData, submitHeroForm } from "./heroReducer";
 
 export const heroSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -19,7 +19,8 @@ export type HeroFormValues = z.infer<typeof heroSchema>;
 
 export function useHomeAdmin() {
   const dispatch = useDispatch<AppDispatch>();
-  const heroData = useSelector((state: RootState) => state.hero.data);
+  // We will configure the Redux store to register this reducer under `adminHero` key.
+  const heroData = useSelector((state: RootState) => (state as any).adminHero?.data || state.hero?.data);
   const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
@@ -52,17 +53,12 @@ export function useHomeAdmin() {
   const onSubmit = async (data: HeroFormValues) => {
     setIsSaving(true);
     try {
-      const res = await fetch("/api/admin/hero", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (!res.ok) throw new Error("Failed to save");
-
-      const savedData = await res.json();
-      dispatch(setHeroData(savedData));
-      toast.success("Hero section updated successfully!");
+      const resultAction = await dispatch(submitHeroForm(data));
+      if (submitHeroForm.fulfilled.match(resultAction)) {
+        toast.success("Hero section updated successfully!");
+      } else {
+        throw new Error("Failed to save");
+      }
     } catch (error) {
       toast.error("Failed to update Hero section.");
     } finally {
