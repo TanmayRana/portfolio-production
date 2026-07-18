@@ -1,0 +1,937 @@
+{
+  "D:\\All Web project\\videoprotfoly\\components.json": {
+    "mtime": 1780984277.5756252,
+    "ast_hash": "036740ba26f82bd501aaaf7b2d084103",
+    "semantic_hash": "036740ba26f82bd501aaaf7b2d084103"
+  },
+  "D:\\All Web project\\videoprotfoly\\drizzle.config.ts": {
+    "mtime": 1780989569.3285263,
+    "ast_hash": "93eaff87620157a0b699005b3bc91310",
+    "semantic_hash": "93eaff87620157a0b699005b3bc91310"
+  },
+  "D:\\All Web project\\videoprotfoly\\eslint.config.mjs": {
+    "mtime": 1780983971.4854977,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "D:\\All Web project\\videoprotfoly\\next-env.d.ts": {
+    "mtime": 1780985033.7863564,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "semantic_hash": "d0f8375ae1199dc7acd3977fc33b78b8"
+  },
+  "D:\\All Web project\\videoprotfoly\\next.config.ts": {
+    "mtime": 1781147346.482376,
+    "ast_hash": "8592b1f9e174bddc5ddb169fd5425383",
+    "semantic_hash": "8592b1f9e174bddc5ddb169fd5425383"
+  },
+  "D:\\All Web project\\videoprotfoly\\package.json": {
+    "mtime": 1781413079.827249,
+    "ast_hash": "a93c369aff9efe501a4c9e900177e85a",
+    "semantic_hash": "a93c369aff9efe501a4c9e900177e85a"
+  },
+  "D:\\All Web project\\videoprotfoly\\postcss.config.mjs": {
+    "mtime": 1780983971.5391204,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "D:\\All Web project\\videoprotfoly\\proxy.ts": {
+    "mtime": 1781168864.1450987,
+    "ast_hash": "b79a572fc39af506c9649a192b30f02e",
+    "semantic_hash": "b79a572fc39af506c9649a192b30f02e"
+  },
+  "D:\\All Web project\\videoprotfoly\\tsconfig.json": {
+    "mtime": 1780983973.12389,
+    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
+    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\layout.tsx": {
+    "mtime": 1781373206.735647,
+    "ast_hash": "a5e3f4d34bedf68b299473b60bad879a",
+    "semantic_hash": "a5e3f4d34bedf68b299473b60bad879a"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\page.tsx": {
+    "mtime": 1781374272.1726925,
+    "ast_hash": "2034fd9addb6bc5de177fb7b39c5d633",
+    "semantic_hash": "2034fd9addb6bc5de177fb7b39c5d633"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\layout.tsx": {
+    "mtime": 1781026311.666803,
+    "ast_hash": "78f5fe332453f3af45690e2410a6f097",
+    "semantic_hash": "78f5fe332453f3af45690e2410a6f097"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\about\\page.tsx": {
+    "mtime": 1781027548.2996528,
+    "ast_hash": "a23a2c873490c0a4c5628c6206918025",
+    "semantic_hash": "a23a2c873490c0a4c5628c6206918025"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\certifications\\page.tsx": {
+    "mtime": 1781028046.8690257,
+    "ast_hash": "ab9d8ee0ab2757035f79188d70a2139c",
+    "semantic_hash": "ab9d8ee0ab2757035f79188d70a2139c"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\contact\\page.tsx": {
+    "mtime": 1781027910.359861,
+    "ast_hash": "6c9b10f49a863837025c275036bfabda",
+    "semantic_hash": "6c9b10f49a863837025c275036bfabda"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\home\\page.tsx": {
+    "mtime": 1781027507.4382832,
+    "ast_hash": "aa380467255dea4a1e64706b2e952a48",
+    "semantic_hash": "aa380467255dea4a1e64706b2e952a48"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\my-experience\\page.tsx": {
+    "mtime": 1781148401.1828022,
+    "ast_hash": "864f3330058e18f813fd3f55f90a55ee",
+    "semantic_hash": "864f3330058e18f813fd3f55f90a55ee"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\projects\\page.tsx": {
+    "mtime": 1781027999.2947712,
+    "ast_hash": "2b68879171cabf60cb4ba74e9ff9aee5",
+    "semantic_hash": "2b68879171cabf60cb4ba74e9ff9aee5"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\resume\\page.tsx": {
+    "mtime": 1781027954.819906,
+    "ast_hash": "5efe26bc8d52633e25bad30aa5f67dac",
+    "semantic_hash": "5efe26bc8d52633e25bad30aa5f67dac"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\skills\\page.tsx": {
+    "mtime": 1781028098.79718,
+    "ast_hash": "1d7e296dc95d5aced3f5a6e005e5ec74",
+    "semantic_hash": "1d7e296dc95d5aced3f5a6e005e5ec74"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\(dashboard)\\work-experience\\page.tsx": {
+    "mtime": 1781028150.2663524,
+    "ast_hash": "8f870567fe4b8741a670c5e9e1e6f411",
+    "semantic_hash": "8f870567fe4b8741a670c5e9e1e6f411"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\login\\page.tsx": {
+    "mtime": 1781168231.5334685,
+    "ast_hash": "f8e617cb18364dc359b1f0beee724543",
+    "semantic_hash": "f8e617cb18364dc359b1f0beee724543"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\admin\\login\\verify\\page.tsx": {
+    "mtime": 1781168253.417298,
+    "ast_hash": "54d9914ad667786c1a5142a32176c0b9",
+    "semantic_hash": "54d9914ad667786c1a5142a32176c0b9"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\about\\route.ts": {
+    "mtime": 1781374224.1451979,
+    "ast_hash": "79adf20e0c02dd01879f9466f7af9688",
+    "semantic_hash": "79adf20e0c02dd01879f9466f7af9688"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\about\\route.ts": {
+    "mtime": 1781372270.1906183,
+    "ast_hash": "3144f22bbef5c2f8dca17409f412155c",
+    "semantic_hash": "3144f22bbef5c2f8dca17409f412155c"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\certifications\\route.ts": {
+    "mtime": 1781028926.3993154,
+    "ast_hash": "55e93582a7f8363a307ab837c3f9fa2a",
+    "semantic_hash": "55e93582a7f8363a307ab837c3f9fa2a"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\contact\\route.ts": {
+    "mtime": 1781026752.8748815,
+    "ast_hash": "6aae664ea1581b3cf5d1cd8fd0bb2167",
+    "semantic_hash": "6aae664ea1581b3cf5d1cd8fd0bb2167"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\hero\\route.ts": {
+    "mtime": 1781026348.9817412,
+    "ast_hash": "534d3922b3f90d895f03b1246e611a1e",
+    "semantic_hash": "534d3922b3f90d895f03b1246e611a1e"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\my-experience\\route.ts": {
+    "mtime": 1781418430.0306385,
+    "ast_hash": "0784e91dae9ee16a3addd525f97e145f",
+    "semantic_hash": "0784e91dae9ee16a3addd525f97e145f"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\projects\\route.ts": {
+    "mtime": 1781028910.3203473,
+    "ast_hash": "34af0e091e3c951ba1cfc6e59ea3c4e3",
+    "semantic_hash": "34af0e091e3c951ba1cfc6e59ea3c4e3"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\resume\\route.ts": {
+    "mtime": 1781028896.571131,
+    "ast_hash": "7fc2ae07123d958e90c66f975c0c61c8",
+    "semantic_hash": "7fc2ae07123d958e90c66f975c0c61c8"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\skills\\route.ts": {
+    "mtime": 1781411220.9883463,
+    "ast_hash": "71046ff7c9b02f7e363a7d7763afb194",
+    "semantic_hash": "71046ff7c9b02f7e363a7d7763afb194"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\skills\\categories\\route.ts": {
+    "mtime": 1781411223.0062294,
+    "ast_hash": "4007ea044390a409b8d0fbada200affe",
+    "semantic_hash": "4007ea044390a409b8d0fbada200affe"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\admin\\work-experience\\route.ts": {
+    "mtime": 1781028871.177768,
+    "ast_hash": "fdbede43517d23e1c5123978883eeca6",
+    "semantic_hash": "fdbede43517d23e1c5123978883eeca6"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\auth\\[...nextauth]\\route.ts": {
+    "mtime": 1781166321.096677,
+    "ast_hash": "df21b367043222699c0e6a3e803425b4",
+    "semantic_hash": "df21b367043222699c0e6a3e803425b4"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\hero\\route.ts": {
+    "mtime": 1781361086.6694732,
+    "ast_hash": "fb72045769ccb2dbeef27ea475583d27",
+    "semantic_hash": "fb72045769ccb2dbeef27ea475583d27"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\my-expertise\\route.ts": {
+    "mtime": 1781412696.6760466,
+    "ast_hash": "4407923eec549febb1954e80231b6045",
+    "semantic_hash": "4407923eec549febb1954e80231b6045"
+  },
+  "D:\\All Web project\\videoprotfoly\\app\\api\\skills\\route.ts": {
+    "mtime": 1781411076.711198,
+    "ast_hash": "95d1fcdbd737fc9772a932367ddc5449",
+    "semantic_hash": "95d1fcdbd737fc9772a932367ddc5449"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\theme-provider.tsx": {
+    "mtime": 1781373128.6900568,
+    "ast_hash": "c00fa9d4a460ac4f9c808ad29d573581",
+    "semantic_hash": "c00fa9d4a460ac4f9c808ad29d573581"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\CertificationCard.tsx": {
+    "mtime": 1781028847.2626343,
+    "ast_hash": "a39249b17335ed4c8f135257808d7013",
+    "semantic_hash": "a39249b17335ed4c8f135257808d7013"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\ConfirmDeleteDialog.tsx": {
+    "mtime": 1781026988.9370747,
+    "ast_hash": "8338cdb7a2b89bad3b1fbf0df7e58aa8",
+    "semantic_hash": "8338cdb7a2b89bad3b1fbf0df7e58aa8"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\ExperienceCard.tsx": {
+    "mtime": 1781028829.4880767,
+    "ast_hash": "e4641136d76e1268d6cfc03954c06766",
+    "semantic_hash": "e4641136d76e1268d6cfc03954c06766"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\FormDialog.tsx": {
+    "mtime": 1781151330.1211336,
+    "ast_hash": "d1dd854ea6293ccd65f0dd2fb360c03a",
+    "semantic_hash": "d1dd854ea6293ccd65f0dd2fb360c03a"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\ImageUploader.tsx": {
+    "mtime": 1781164524.3587558,
+    "ast_hash": "373688d7489f5863283f06dd28a3e7e9",
+    "semantic_hash": "373688d7489f5863283f06dd28a3e7e9"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\PageHeader.tsx": {
+    "mtime": 1781026969.6429148,
+    "ast_hash": "29e8803f260e950e62839e40dbd9e3a1",
+    "semantic_hash": "29e8803f260e950e62839e40dbd9e3a1"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\ProjectCard.tsx": {
+    "mtime": 1781028816.2168176,
+    "ast_hash": "584eace73f12a4da222aa800405309f7",
+    "semantic_hash": "584eace73f12a4da222aa800405309f7"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\ResumeUploader.tsx": {
+    "mtime": 1781165223.7878225,
+    "ast_hash": "3cc69faab672b917c4e18670bcc80547",
+    "semantic_hash": "3cc69faab672b917c4e18670bcc80547"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\SkillProgressBar.tsx": {
+    "mtime": 1781411264.2371173,
+    "ast_hash": "5f9ac6cf9a6ad5c56854a2a552237a13",
+    "semantic_hash": "5f9ac6cf9a6ad5c56854a2a552237a13"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\StatusBadge.tsx": {
+    "mtime": 1781026997.8566694,
+    "ast_hash": "14ce277c69e9ac493f2b31256a461a4d",
+    "semantic_hash": "14ce277c69e9ac493f2b31256a461a4d"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\VideoUploader.tsx": {
+    "mtime": 1781164536.6205852,
+    "ast_hash": "ba8a8541e300cae6985524dcbea54ce4",
+    "semantic_hash": "ba8a8541e300cae6985524dcbea54ce4"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\about\\index.tsx": {
+    "mtime": 1781371997.6498218,
+    "ast_hash": "d90fd2369f30514340e900fe0af307de",
+    "semantic_hash": "d90fd2369f30514340e900fe0af307de"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\certifications\\index.tsx": {
+    "mtime": 1781165340.5940971,
+    "ast_hash": "c3aed30e6f6259c291f505a6c86d3a59",
+    "semantic_hash": "c3aed30e6f6259c291f505a6c86d3a59"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\contact\\index.tsx": {
+    "mtime": 1781165055.0387678,
+    "ast_hash": "ebebfbf2302d1126fe498bb9e139138c",
+    "semantic_hash": "ebebfbf2302d1126fe498bb9e139138c"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\home\\index.tsx": {
+    "mtime": 1781165352.9946086,
+    "ast_hash": "db82a10d350e862b1e632e3af7d68853",
+    "semantic_hash": "db82a10d350e862b1e632e3af7d68853"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\login\\index.tsx": {
+    "mtime": 1781168226.1340957,
+    "ast_hash": "0a84ea1f2bcf20e92bce465340212648",
+    "semantic_hash": "0a84ea1f2bcf20e92bce465340212648"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\my-experience\\index.tsx": {
+    "mtime": 1781419238.1535504,
+    "ast_hash": "9ffb7b58a9972b68bcb153039ece79cd",
+    "semantic_hash": "9ffb7b58a9972b68bcb153039ece79cd"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\projects\\index.tsx": {
+    "mtime": 1781165375.126462,
+    "ast_hash": "a91fc13a3749463b5e86359a342cf016",
+    "semantic_hash": "a91fc13a3749463b5e86359a342cf016"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\resume\\index.tsx": {
+    "mtime": 1781165314.2124119,
+    "ast_hash": "395b4fd4f4a240e1b46acda0ce218cf9",
+    "semantic_hash": "395b4fd4f4a240e1b46acda0ce218cf9"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\skills\\index.tsx": {
+    "mtime": 1781411977.9896598,
+    "ast_hash": "f9a8475ad9c9d405f4660695da40ae26",
+    "semantic_hash": "f9a8475ad9c9d405f4660695da40ae26"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\verify\\index.tsx": {
+    "mtime": 1781168377.7638855,
+    "ast_hash": "617b67e1fd44db8b2eafe2c55ab50ecf",
+    "semantic_hash": "617b67e1fd44db8b2eafe2c55ab50ecf"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\admin\\work-experience\\index.tsx": {
+    "mtime": 1781165397.8909485,
+    "ast_hash": "a119c9521d783f2733d696661a821df9",
+    "semantic_hash": "a119c9521d783f2733d696661a821df9"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\hero\\index.tsx": {
+    "mtime": 1780989410.6571343,
+    "ast_hash": "cb7773ef4d6b6fe417e6c879cd2def80",
+    "semantic_hash": "cb7773ef4d6b6fe417e6c879cd2def80"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\AboutMe.tsx": {
+    "mtime": 1781410490.7647104,
+    "ast_hash": "181af4ffc06fa5487ce2f690e6e830c5",
+    "semantic_hash": "181af4ffc06fa5487ce2f690e6e830c5"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\Contact.tsx": {
+    "mtime": 1781370530.9266562,
+    "ast_hash": "f9ee365ff4d0f157e31750a01632f70b",
+    "semantic_hash": "f9ee365ff4d0f157e31750a01632f70b"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\FeaturedProjects.tsx": {
+    "mtime": 1781359398.0712004,
+    "ast_hash": "d4bfec3ef21d68260c285f3988f0df02",
+    "semantic_hash": "d4bfec3ef21d68260c285f3988f0df02"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\Hero.tsx": {
+    "mtime": 1781374309.3262851,
+    "ast_hash": "c62f2a8a4f73a61d913ca00fda3d2487",
+    "semantic_hash": "c62f2a8a4f73a61d913ca00fda3d2487"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\MyExpertise.tsx": {
+    "mtime": 1781419927.438246,
+    "ast_hash": "0d8ffc2cf21dca9e4624078622265be9",
+    "semantic_hash": "0d8ffc2cf21dca9e4624078622265be9"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\ProfessionalCredentials.tsx": {
+    "mtime": 1781359411.2119007,
+    "ast_hash": "c4b88812a63c3cd3cb0479ca5cbc2a2f",
+    "semantic_hash": "c4b88812a63c3cd3cb0479ca5cbc2a2f"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\Skills.tsx": {
+    "mtime": 1781411967.8664207,
+    "ast_hash": "7687df7f0312683d348cab9423cdc4e9",
+    "semantic_hash": "7687df7f0312683d348cab9423cdc4e9"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\sections\\WorkExperience.tsx": {
+    "mtime": 1781359409.1574879,
+    "ast_hash": "5c26621d7b8e5da9c38850b53a554e18",
+    "semantic_hash": "5c26621d7b8e5da9c38850b53a554e18"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\SidebarpageComponents\\app-sidebar.tsx": {
+    "mtime": 1781169296.5702932,
+    "ast_hash": "c533e7308d407299bfd28228a68a54c0",
+    "semantic_hash": "c533e7308d407299bfd28228a68a54c0"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\SidebarpageComponents\\nav-main.tsx": {
+    "mtime": 1780986216.5231884,
+    "ast_hash": "b3dc5f87150f424cbe25a6ab1cc9b8a6",
+    "semantic_hash": "b3dc5f87150f424cbe25a6ab1cc9b8a6"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\SidebarpageComponents\\nav-user.tsx": {
+    "mtime": 1781169413.2259681,
+    "ast_hash": "ee46dcaea13402d8f4a4c25a7909c1d2",
+    "semantic_hash": "ee46dcaea13402d8f4a4c25a7909c1d2"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\SidebarpageComponents\\SidebarPage.tsx": {
+    "mtime": 1781169583.5352113,
+    "ast_hash": "7e90bf24c22a4f896c4d4271618ffa1c",
+    "semantic_hash": "7e90bf24c22a4f896c4d4271618ffa1c"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\accordion.tsx": {
+    "mtime": 1780984915.4499717,
+    "ast_hash": "920ce9582ece6b7dc4ee3d162b8333ad",
+    "semantic_hash": "920ce9582ece6b7dc4ee3d162b8333ad"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\alert-dialog.tsx": {
+    "mtime": 1780984920.5354,
+    "ast_hash": "65179d610cf06fa925439f4ae7bca908",
+    "semantic_hash": "65179d610cf06fa925439f4ae7bca908"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\alert.tsx": {
+    "mtime": 1780984915.5855434,
+    "ast_hash": "739c28799fae98b4fa01132494788e85",
+    "semantic_hash": "739c28799fae98b4fa01132494788e85"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\aspect-ratio.tsx": {
+    "mtime": 1780984915.7131076,
+    "ast_hash": "c6d85ec0522899c5da67ffdae8b4f3ea",
+    "semantic_hash": "c6d85ec0522899c5da67ffdae8b4f3ea"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\avatar.tsx": {
+    "mtime": 1780984915.8221538,
+    "ast_hash": "b48244919ef33575fecf5509063b7310",
+    "semantic_hash": "b48244919ef33575fecf5509063b7310"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\badge.tsx": {
+    "mtime": 1780984915.936518,
+    "ast_hash": "633c33997e6137921ae433dd2dd0cb31",
+    "semantic_hash": "633c33997e6137921ae433dd2dd0cb31"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\breadcrumb.tsx": {
+    "mtime": 1780984765.7319546,
+    "ast_hash": "f42f6a0073354a8cf89f9d1123660c65",
+    "semantic_hash": "f42f6a0073354a8cf89f9d1123660c65"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\button-group.tsx": {
+    "mtime": 1780984921.4643867,
+    "ast_hash": "74a606b91a9f8d135c4dd82b9eb44c63",
+    "semantic_hash": "74a606b91a9f8d135c4dd82b9eb44c63"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\button.tsx": {
+    "mtime": 1780984294.013928,
+    "ast_hash": "37ff09090166aa7d6fae96e0b081e492",
+    "semantic_hash": "37ff09090166aa7d6fae96e0b081e492"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\calendar.tsx": {
+    "mtime": 1780984920.7506783,
+    "ast_hash": "6076bb38f375b301aacaab70740ed623",
+    "semantic_hash": "6076bb38f375b301aacaab70740ed623"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\card.tsx": {
+    "mtime": 1780984916.3117123,
+    "ast_hash": "bd5f88ad2d983dd6c4561d63824c80ba",
+    "semantic_hash": "bd5f88ad2d983dd6c4561d63824c80ba"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\carousel.tsx": {
+    "mtime": 1780984920.9238784,
+    "ast_hash": "0267b73e177c079adecf87c826d5b59c",
+    "semantic_hash": "0267b73e177c079adecf87c826d5b59c"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\chart.tsx": {
+    "mtime": 1780984916.506878,
+    "ast_hash": "ea3aef621225b35027a63a606b632c54",
+    "semantic_hash": "ea3aef621225b35027a63a606b632c54"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\checkbox.tsx": {
+    "mtime": 1780984916.6486244,
+    "ast_hash": "09073231ed001b522fd23911b54ae2f5",
+    "semantic_hash": "09073231ed001b522fd23911b54ae2f5"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\collapsible.tsx": {
+    "mtime": 1780984916.7532873,
+    "ast_hash": "d3bc158594b1f19fd28d9868792d17f1",
+    "semantic_hash": "d3bc158594b1f19fd28d9868792d17f1"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\combobox.tsx": {
+    "mtime": 1780984922.2997952,
+    "ast_hash": "ae018f2b9d338b5f8b590be9a845b564",
+    "semantic_hash": "ae018f2b9d338b5f8b590be9a845b564"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\command.tsx": {
+    "mtime": 1780984922.4518685,
+    "ast_hash": "85d2b0196c4906103cc6832a793e5fba",
+    "semantic_hash": "85d2b0196c4906103cc6832a793e5fba"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\context-menu.tsx": {
+    "mtime": 1780984916.8961902,
+    "ast_hash": "6ed157dff6becce2ac4da2f8a12b6037",
+    "semantic_hash": "6ed157dff6becce2ac4da2f8a12b6037"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\dialog.tsx": {
+    "mtime": 1780984921.0748785,
+    "ast_hash": "e01132db6e9067b7b8cc2e322fdd34ff",
+    "semantic_hash": "e01132db6e9067b7b8cc2e322fdd34ff"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\direction.tsx": {
+    "mtime": 1780984916.994364,
+    "ast_hash": "87b2e543828b0ac3444de56cfd0016d0",
+    "semantic_hash": "87b2e543828b0ac3444de56cfd0016d0"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\drawer.tsx": {
+    "mtime": 1780984917.1084125,
+    "ast_hash": "ecce2b5100dd3d8a11f15fcc20fa33dd",
+    "semantic_hash": "ecce2b5100dd3d8a11f15fcc20fa33dd"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1780984917.2805624,
+    "ast_hash": "bbb3295e356676c5e82220fcf5d7ca55",
+    "semantic_hash": "bbb3295e356676c5e82220fcf5d7ca55"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\empty.tsx": {
+    "mtime": 1780984917.389308,
+    "ast_hash": "ca7063724c4b1e81d8f1337e8236a1d8",
+    "semantic_hash": "ca7063724c4b1e81d8f1337e8236a1d8"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\field.tsx": {
+    "mtime": 1780984921.563023,
+    "ast_hash": "1b038d62623c29946f57e746fb89cc7e",
+    "semantic_hash": "1b038d62623c29946f57e746fb89cc7e"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\hover-card.tsx": {
+    "mtime": 1780984917.489229,
+    "ast_hash": "cc8cde9ca4bf5ced50ce3c4106268446",
+    "semantic_hash": "cc8cde9ca4bf5ced50ce3c4106268446"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\input-group.tsx": {
+    "mtime": 1780984921.7859898,
+    "ast_hash": "750fe82601c39e80407e4b8d9f77a082",
+    "semantic_hash": "750fe82601c39e80407e4b8d9f77a082"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\input-otp.tsx": {
+    "mtime": 1780984917.7036045,
+    "ast_hash": "561abe4157d9e73c23f7ea7c38f4bd86",
+    "semantic_hash": "561abe4157d9e73c23f7ea7c38f4bd86"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\input.tsx": {
+    "mtime": 1780984766.1244738,
+    "ast_hash": "2b0e9e810580f227dd255d9b78a83835",
+    "semantic_hash": "2b0e9e810580f227dd255d9b78a83835"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\item.tsx": {
+    "mtime": 1780984921.6696618,
+    "ast_hash": "53f9c4da2abe404e7d82ac0511d42ec9",
+    "semantic_hash": "53f9c4da2abe404e7d82ac0511d42ec9"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\kbd.tsx": {
+    "mtime": 1780984917.8036535,
+    "ast_hash": "f8d9503a392bc89df024bc8eb65afad5",
+    "semantic_hash": "f8d9503a392bc89df024bc8eb65afad5"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\label.tsx": {
+    "mtime": 1780984917.9079363,
+    "ast_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf",
+    "semantic_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\menubar.tsx": {
+    "mtime": 1780984918.105926,
+    "ast_hash": "932514c9f0d0e6d533484244b699805d",
+    "semantic_hash": "932514c9f0d0e6d533484244b699805d"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\native-select.tsx": {
+    "mtime": 1780984918.218824,
+    "ast_hash": "8ecaa1257740ed8c6d6da39076f4a30f",
+    "semantic_hash": "8ecaa1257740ed8c6d6da39076f4a30f"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\navigation-menu.tsx": {
+    "mtime": 1780984918.3511188,
+    "ast_hash": "436040fc0195505929894098cada67e4",
+    "semantic_hash": "436040fc0195505929894098cada67e4"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\pagination.tsx": {
+    "mtime": 1780984921.201175,
+    "ast_hash": "27545e936f6d225a1dfab57fa98fab98",
+    "semantic_hash": "27545e936f6d225a1dfab57fa98fab98"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\popover.tsx": {
+    "mtime": 1780984918.4792242,
+    "ast_hash": "32bf79a82d9ed7f3256592f7c0ca4a62",
+    "semantic_hash": "32bf79a82d9ed7f3256592f7c0ca4a62"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\progress.tsx": {
+    "mtime": 1780984918.582918,
+    "ast_hash": "656a678d379ff2132dd1855b2359cc1c",
+    "semantic_hash": "656a678d379ff2132dd1855b2359cc1c"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\radio-group.tsx": {
+    "mtime": 1780984918.6879244,
+    "ast_hash": "8853af40e6ead29cdafb52c93848aee1",
+    "semantic_hash": "8853af40e6ead29cdafb52c93848aee1"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\resizable.tsx": {
+    "mtime": 1780984918.7767692,
+    "ast_hash": "1f0f385519b1d48a14bfb81158385403",
+    "semantic_hash": "1f0f385519b1d48a14bfb81158385403"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\scroll-area.tsx": {
+    "mtime": 1780984918.8725512,
+    "ast_hash": "5a04c269a377e8176ebbf27ee8ac35bf",
+    "semantic_hash": "5a04c269a377e8176ebbf27ee8ac35bf"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\select.tsx": {
+    "mtime": 1780984919.0197945,
+    "ast_hash": "6b059f4665ced5cf2812426ef2ae9cf4",
+    "semantic_hash": "6b059f4665ced5cf2812426ef2ae9cf4"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\separator.tsx": {
+    "mtime": 1780984765.8668494,
+    "ast_hash": "f57449eae78fbd87d99e4edc45ab3c1e",
+    "semantic_hash": "f57449eae78fbd87d99e4edc45ab3c1e"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\sheet.tsx": {
+    "mtime": 1780984766.4114947,
+    "ast_hash": "136091919ca01aa135e9413cc05b2d23",
+    "semantic_hash": "136091919ca01aa135e9413cc05b2d23"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\sidebar.tsx": {
+    "mtime": 1780984766.6701934,
+    "ast_hash": "b18963e32ea81086b494ce273436abf3",
+    "semantic_hash": "b18963e32ea81086b494ce273436abf3"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\skeleton.tsx": {
+    "mtime": 1780984766.3039138,
+    "ast_hash": "0e6e825c43d858d98c9903f4da975382",
+    "semantic_hash": "0e6e825c43d858d98c9903f4da975382"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\slider.tsx": {
+    "mtime": 1780984919.353263,
+    "ast_hash": "5345e0c724b2ee363ba117f5c5e3c7ec",
+    "semantic_hash": "5345e0c724b2ee363ba117f5c5e3c7ec"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\sonner.tsx": {
+    "mtime": 1780984919.4860272,
+    "ast_hash": "f46214bc2a6a5153a6e04fad523d5587",
+    "semantic_hash": "f46214bc2a6a5153a6e04fad523d5587"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\spinner.tsx": {
+    "mtime": 1780984919.5920782,
+    "ast_hash": "fd059d59ffd918b682307fc84fcb38e8",
+    "semantic_hash": "fd059d59ffd918b682307fc84fcb38e8"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\switch.tsx": {
+    "mtime": 1780984919.7034397,
+    "ast_hash": "5cc42175a3e9b6f20f1d48960bd55158",
+    "semantic_hash": "5cc42175a3e9b6f20f1d48960bd55158"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\table.tsx": {
+    "mtime": 1780984919.803763,
+    "ast_hash": "44f87727e60080863edb00fdd2fcd8da",
+    "semantic_hash": "44f87727e60080863edb00fdd2fcd8da"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\tabs.tsx": {
+    "mtime": 1780984919.9143248,
+    "ast_hash": "485d47f9e6f866e564685e6584e1e747",
+    "semantic_hash": "485d47f9e6f866e564685e6584e1e747"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\textarea.tsx": {
+    "mtime": 1780984920.0635176,
+    "ast_hash": "d448d2a90e48542e51b93a1189127bf2",
+    "semantic_hash": "d448d2a90e48542e51b93a1189127bf2"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\toggle-group.tsx": {
+    "mtime": 1780984921.8995583,
+    "ast_hash": "dda8b0ac114e4c4f456efa5a651b39a3",
+    "semantic_hash": "dda8b0ac114e4c4f456efa5a651b39a3"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\toggle.tsx": {
+    "mtime": 1780984920.2058976,
+    "ast_hash": "6556d3814933e92ddef27a765a3a09fa",
+    "semantic_hash": "6556d3814933e92ddef27a765a3a09fa"
+  },
+  "D:\\All Web project\\videoprotfoly\\components\\ui\\tooltip.tsx": {
+    "mtime": 1780984766.0400636,
+    "ast_hash": "b0b931c1a15ec3924fa5fecebaa15685",
+    "semantic_hash": "b0b931c1a15ec3924fa5fecebaa15685"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\about\\Hooks.tsx": {
+    "mtime": 1781371974.664091,
+    "ast_hash": "458240abdbee0c1d53a5fbd62395a140",
+    "semantic_hash": "458240abdbee0c1d53a5fbd62395a140"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\about\\index.tsx": {
+    "mtime": 1781371985.5164125,
+    "ast_hash": "8e0ae6d643ce7a72f7aec049dcf92add",
+    "semantic_hash": "8e0ae6d643ce7a72f7aec049dcf92add"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\certifications\\Hooks.tsx": {
+    "mtime": 1781164914.0169406,
+    "ast_hash": "738a91557d026480069bb3049d0a5077",
+    "semantic_hash": "738a91557d026480069bb3049d0a5077"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\certifications\\index.tsx": {
+    "mtime": 1781028037.010696,
+    "ast_hash": "4fd953418496c24946cef9b97de3246d",
+    "semantic_hash": "4fd953418496c24946cef9b97de3246d"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\contact\\Hooks.tsx": {
+    "mtime": 1781165077.0895057,
+    "ast_hash": "42a88f791ac18b16339bd048b38781ff",
+    "semantic_hash": "42a88f791ac18b16339bd048b38781ff"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\contact\\index.tsx": {
+    "mtime": 1781027903.933886,
+    "ast_hash": "593a04937149e5b165026cf5445d9a88",
+    "semantic_hash": "593a04937149e5b165026cf5445d9a88"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\home\\Hooks.tsx": {
+    "mtime": 1781147714.8554235,
+    "ast_hash": "2131dc9b04aa1a2a450f1c033f62822f",
+    "semantic_hash": "2131dc9b04aa1a2a450f1c033f62822f"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\home\\index.tsx": {
+    "mtime": 1781027499.960784,
+    "ast_hash": "3b311a1c5ecde1d195aab5c8ce2ebd2b",
+    "semantic_hash": "3b311a1c5ecde1d195aab5c8ce2ebd2b"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\login\\Hooks.tsx": {
+    "mtime": 1781168834.383595,
+    "ast_hash": "23b7ee881a6bf722479f359834028a4e",
+    "semantic_hash": "23b7ee881a6bf722479f359834028a4e"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\login\\index.tsx": {
+    "mtime": 1781168228.3229995,
+    "ast_hash": "6064e4c8b5bf718c7d5fd355a3ac0777",
+    "semantic_hash": "6064e4c8b5bf718c7d5fd355a3ac0777"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\my-experience\\Hooks.tsx": {
+    "mtime": 1781418764.748904,
+    "ast_hash": "1d196791c6713100edbaf461f0681ee1",
+    "semantic_hash": "1d196791c6713100edbaf461f0681ee1"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\my-experience\\index.tsx": {
+    "mtime": 1781148730.480994,
+    "ast_hash": "2af90a700de76deefd49ccf151340f5b",
+    "semantic_hash": "2af90a700de76deefd49ccf151340f5b"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\projects\\Hooks.tsx": {
+    "mtime": 1781028767.9887302,
+    "ast_hash": "602e94894635278da85500f49a802a9e",
+    "semantic_hash": "602e94894635278da85500f49a802a9e"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\projects\\index.tsx": {
+    "mtime": 1781027992.2035117,
+    "ast_hash": "302a0ad2a0fca2ea0501a72d40ae71ad",
+    "semantic_hash": "302a0ad2a0fca2ea0501a72d40ae71ad"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\resume\\Hooks.tsx": {
+    "mtime": 1781028378.278596,
+    "ast_hash": "3eeb679395829a2bc752c65de00649ad",
+    "semantic_hash": "3eeb679395829a2bc752c65de00649ad"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\resume\\index.tsx": {
+    "mtime": 1781027946.6908104,
+    "ast_hash": "07dc4c3c9c186b634b3269ae5c8437de",
+    "semantic_hash": "07dc4c3c9c186b634b3269ae5c8437de"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\skills\\Hooks.tsx": {
+    "mtime": 1781411254.3931482,
+    "ast_hash": "23614ab8e4573f19ef0c952e7e04e267",
+    "semantic_hash": "23614ab8e4573f19ef0c952e7e04e267"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\skills\\index.tsx": {
+    "mtime": 1781411310.888457,
+    "ast_hash": "dc7522d68198fd357b1f158db2eba142",
+    "semantic_hash": "dc7522d68198fd357b1f158db2eba142"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\verify\\Hooks.tsx": {
+    "mtime": 1781168843.8831253,
+    "ast_hash": "eab05345323a17656f0644ff45a818d6",
+    "semantic_hash": "eab05345323a17656f0644ff45a818d6"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\verify\\index.tsx": {
+    "mtime": 1781168251.3867476,
+    "ast_hash": "a979224adb22d91e60a1651f09bdad6a",
+    "semantic_hash": "a979224adb22d91e60a1651f09bdad6a"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\work-experience\\Hooks.tsx": {
+    "mtime": 1781150648.746344,
+    "ast_hash": "6bbf4203627b54881233320ca6d42952",
+    "semantic_hash": "6bbf4203627b54881233320ca6d42952"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\admin\\work-experience\\index.tsx": {
+    "mtime": 1781150664.395385,
+    "ast_hash": "4dcd2dd8417530b7f8b3d8e84a4facac",
+    "semantic_hash": "4dcd2dd8417530b7f8b3d8e84a4facac"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\home\\AboutContainer.tsx": {
+    "mtime": 1781374241.1332254,
+    "ast_hash": "09f8ea85e4f7b70ab627c1048c48d8fc",
+    "semantic_hash": "09f8ea85e4f7b70ab627c1048c48d8fc"
+  },
+  "D:\\All Web project\\videoprotfoly\\containers\\home\\HeroContainer.tsx": {
+    "mtime": 1781361122.2447174,
+    "ast_hash": "2acf1371fb6a6c9b30a5ff1ce2fb7d31",
+    "semantic_hash": "2acf1371fb6a6c9b30a5ff1ce2fb7d31"
+  },
+  "D:\\All Web project\\videoprotfoly\\drizzle\\0000_sharp_ender_wiggin.sql": {
+    "mtime": 1780989493.0601773,
+    "ast_hash": "18ac1c3e7cf9f5d816025c1c036bb0ad",
+    "semantic_hash": "18ac1c3e7cf9f5d816025c1c036bb0ad"
+  },
+  "D:\\All Web project\\videoprotfoly\\drizzle\\meta\\0000_snapshot.json": {
+    "mtime": 1780989493.0591683,
+    "ast_hash": "22c0236a9069b9569f78e910d0aacb9e",
+    "semantic_hash": "22c0236a9069b9569f78e910d0aacb9e"
+  },
+  "D:\\All Web project\\videoprotfoly\\drizzle\\meta\\_journal.json": {
+    "mtime": 1780989493.0591683,
+    "ast_hash": "91093054fff5d583959100697c10c8df",
+    "semantic_hash": "91093054fff5d583959100697c10c8df"
+  },
+  "D:\\All Web project\\videoprotfoly\\hooks\\use-mobile.ts": {
+    "mtime": 1780984766.20771,
+    "ast_hash": "209b5193af16624cdd89d3591480dd48",
+    "semantic_hash": "209b5193af16624cdd89d3591480dd48"
+  },
+  "D:\\All Web project\\videoprotfoly\\hooks\\useAbout.ts": {
+    "mtime": 1781374233.890628,
+    "ast_hash": "43bae5ab74f94d09f3fb466e07fe1544",
+    "semantic_hash": "43bae5ab74f94d09f3fb466e07fe1544"
+  },
+  "D:\\All Web project\\videoprotfoly\\hooks\\useHero.ts": {
+    "mtime": 1781361098.1590884,
+    "ast_hash": "b88e64fe4f53f4f987beb05562955571",
+    "semantic_hash": "b88e64fe4f53f4f987beb05562955571"
+  },
+  "D:\\All Web project\\videoprotfoly\\hooks\\useMyExpertise.ts": {
+    "mtime": 1781412698.703798,
+    "ast_hash": "19c7c8fdfa45f24942b2049f2c5f7ea5",
+    "semantic_hash": "19c7c8fdfa45f24942b2049f2c5f7ea5"
+  },
+  "D:\\All Web project\\videoprotfoly\\hooks\\useSkills.ts": {
+    "mtime": 1781411084.9328527,
+    "ast_hash": "7ae5aaf8a4baba15c3f40c3b947e874c",
+    "semantic_hash": "7ae5aaf8a4baba15c3f40c3b947e874c"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\auth.ts": {
+    "mtime": 1781167878.725668,
+    "ast_hash": "d4470d2b7444ddd21b8c9feb691000e2",
+    "semantic_hash": "d4470d2b7444ddd21b8c9feb691000e2"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\db.ts": {
+    "mtime": 1780987969.383442,
+    "ast_hash": "fa23ffa5f295dfcebc415f1fccf63e75",
+    "semantic_hash": "fa23ffa5f295dfcebc415f1fccf63e75"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\imagekit.ts": {
+    "mtime": 1781147402.2938101,
+    "ast_hash": "79fc926ebb10a1766c9cd313bd4809c3",
+    "semantic_hash": "79fc926ebb10a1766c9cd313bd4809c3"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\schema.ts": {
+    "mtime": 1781418522.3112214,
+    "ast_hash": "5d22ec5da37d476d990582bfa34961f5",
+    "semantic_hash": "5d22ec5da37d476d990582bfa34961f5"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\utils.ts": {
+    "mtime": 1780984294.0939,
+    "ast_hash": "5a6fd53fdcf2be529e9cc0b718fde352",
+    "semantic_hash": "5a6fd53fdcf2be529e9cc0b718fde352"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\aboutSlice.ts": {
+    "mtime": 1781371972.5969012,
+    "ast_hash": "fd27f89743ce13f0c3dc8a6840a30a97",
+    "semantic_hash": "fd27f89743ce13f0c3dc8a6840a30a97"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\certificationsSlice.ts": {
+    "mtime": 1781028680.2302718,
+    "ast_hash": "ed15bccc64966e69b9dc642546d3bacf",
+    "semantic_hash": "ed15bccc64966e69b9dc642546d3bacf"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\contactSlice.ts": {
+    "mtime": 1781165065.5622995,
+    "ast_hash": "d0918ca843bac6ad2816ccbbfb2d2b48",
+    "semantic_hash": "d0918ca843bac6ad2816ccbbfb2d2b48"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\heroSlice.ts": {
+    "mtime": 1781147698.189572,
+    "ast_hash": "42df212f41709e322dce579d36d33094",
+    "semantic_hash": "42df212f41709e322dce579d36d33094"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\index.ts": {
+    "mtime": 1781028526.7325044,
+    "ast_hash": "0e292149df8a49323fdacc62b1e058d4",
+    "semantic_hash": "0e292149df8a49323fdacc62b1e058d4"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\myExperienceSlice.ts": {
+    "mtime": 1781418325.4897344,
+    "ast_hash": "88c72f3b24d05a22e11ea81d89307b7e",
+    "semantic_hash": "88c72f3b24d05a22e11ea81d89307b7e"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\projectsSlice.ts": {
+    "mtime": 1781028670.0847504,
+    "ast_hash": "5347d5ecba9939724ab57dee5b1a8334",
+    "semantic_hash": "5347d5ecba9939724ab57dee5b1a8334"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\ReduxProvider.tsx": {
+    "mtime": 1780988699.1805913,
+    "ast_hash": "20f6f50498af5143a3335ffa68fd18ea",
+    "semantic_hash": "20f6f50498af5143a3335ffa68fd18ea"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\resumeSlice.ts": {
+    "mtime": 1781028660.5037992,
+    "ast_hash": "f1fcd23259691411df2278670822013a",
+    "semantic_hash": "f1fcd23259691411df2278670822013a"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\skillsSlice.ts": {
+    "mtime": 1781411233.2366347,
+    "ast_hash": "de94221dcfea3121877ff82d90a8120b",
+    "semantic_hash": "de94221dcfea3121877ff82d90a8120b"
+  },
+  "D:\\All Web project\\videoprotfoly\\lib\\store\\workExperienceSlice.ts": {
+    "mtime": 1781028698.6481798,
+    "ast_hash": "0bd3a70e0c7c314a7b22eb08c19529a4",
+    "semantic_hash": "0bd3a70e0c7c314a7b22eb08c19529a4"
+  },
+  "D:\\All Web project\\videoprotfoly\\AGENTS.md": {
+    "mtime": 1780984023.4134395,
+    "ast_hash": "9e09241799026ac05be315a2f0b50055",
+    "semantic_hash": "9e09241799026ac05be315a2f0b50055"
+  },
+  "D:\\All Web project\\videoprotfoly\\CLAUDE.md": {
+    "mtime": 1780984023.4134395,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "D:\\All Web project\\videoprotfoly\\README.md": {
+    "mtime": 1780983971.45042,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "D:\\All Web project\\videoprotfoly\\.agents\\rules\\graphify.md": {
+    "mtime": 1780986337.879557,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": "a0e4d192b9e2e17256124dbfc8e24e6a"
+  },
+  "D:\\All Web project\\videoprotfoly\\.agents\\workflows\\graphify.md": {
+    "mtime": 1780986337.879557,
+    "ast_hash": "637776aa6f7496d069afe7520c845c8a",
+    "semantic_hash": "637776aa6f7496d069afe7520c845c8a"
+  },
+  "D:\\All Web project\\videoprotfoly\\public\\file.svg": {
+    "mtime": 1780983971.5533986,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "D:\\All Web project\\videoprotfoly\\public\\globe.svg": {
+    "mtime": 1780983971.5756514,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "D:\\All Web project\\videoprotfoly\\public\\next.svg": {
+    "mtime": 1780983971.6004474,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "D:\\All Web project\\videoprotfoly\\public\\vercel.svg": {
+    "mtime": 1780983971.6193104,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "D:\\All Web project\\videoprotfoly\\public\\window.svg": {
+    "mtime": 1780983971.6354449,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}

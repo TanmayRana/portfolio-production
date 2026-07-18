@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  nginx:
+    image: ghcr.io/tanmayrana/portfolio-nginx:latest
+    build:
+      context: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      next1:
+        condition: service_healthy
+      next2:
+        condition: service_healthy
+
+  next1:
+    image: ghcr.io/tanmayrana/portfolio-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: next1
+    restart: always
+    expose:
+      - "3000"
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:3000/api/health').then(r => r.ok ? process.exit(0) : process.exit(1)).catch(() => process.exit(1))\""]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  next2:
+    image: ghcr.io/tanmayrana/portfolio-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: next2
+    restart: always
+    expose:
+      - "3000"
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:3000/api/health').then(r => r.ok ? process.exit(0) : process.exit(1)).catch(() => process.exit(1))\""]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
