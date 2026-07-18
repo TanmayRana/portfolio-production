@@ -4,7 +4,7 @@ import { ImageKit, toFile } from "@imagekit/nodejs";
 
 // New SDK only requires privateKey in the constructor
 const imagekit = new ImageKit({
-  privateKey: process.env.IMAGEKIT_PRIVATE_KEY!,
+  privateKey: process.env.IMAGEKIT_PRIVATE_KEY || "dummy_private_key_for_build",
 });
 
 export async function uploadToImageKit(
