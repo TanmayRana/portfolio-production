@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
-import { db } from "@/lib/db";
-import { myExperienceTable } from "@/lib/schema";
+import { ExpertiseService } from "@/lib/services/expertiseService";
 
 export async function GET() {
   try {
-    const data = await db.select().from(myExperienceTable).orderBy(myExperienceTable.order);
+    const data = await ExpertiseService.getExpertiseData();
     return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("GET /api/my-expertise error:", error);

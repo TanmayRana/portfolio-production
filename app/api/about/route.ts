@@ -1,25 +1,14 @@
 import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
-import { db } from "@/lib/db";
-import { aboutTable, heroTable, contactTable } from "@/lib/schema";
+import { AboutService } from "@/lib/services/aboutService";
 
 export async function GET() {
   try {
-    const existingAbout = await db.select().from(aboutTable).limit(1);
-    const heroInfo = await db.select({ imageUrl: heroTable.imageUrl }).from(heroTable).limit(1);
-    const contactInfo = await db.select().from(contactTable).limit(1);
-
-    const aboutData = existingAbout[0] || null;
-    const imageUrl = heroInfo[0]?.imageUrl || null;
-    const contactData = contactInfo[0] || null;
+    const data = await AboutService.getAboutData();
 
     return NextResponse.json({
       success: true,
-      data: {
-        about: aboutData,
-        imageUrl: imageUrl,
-        contact: contactData
-      }
+      data
     });
   } catch (err) {
     console.error("GET /api/about error:", err);
