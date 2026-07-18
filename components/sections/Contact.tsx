@@ -557,10 +557,10 @@ const Contact = () => {
   const isLoadingData = status === "loading";
 
   useEffect(() => {
-    if (status === "idle" || (contactData === null && status !== "loading")) {
+    if (status === "idle") {
       dispatch(fetchContactData());
     }
-  }, [dispatch, status, contactData]);
+  }, [dispatch, status]);
 
   const [isPending, startTransition] = useTransition();
   const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">(

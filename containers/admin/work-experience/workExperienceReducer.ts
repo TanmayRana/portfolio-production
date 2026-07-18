@@ -57,8 +57,16 @@ const adminWorkExperienceSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+      .addCase(fetchWorkExperienceData.pending, (state) => {
+        state.status = "loading";
+      })
       .addCase(fetchWorkExperienceData.fulfilled, (state, action) => {
+        state.status = "success";
         state.data = action.payload;
+      })
+      .addCase(fetchWorkExperienceData.rejected, (state, action) => {
+        state.status = "error";
+        state.message = (action.payload as any)?.message || "Error fetching work experience";
       })
       .addCase(saveWorkExperienceData.pending, (state) => {
         state.status = "loading";

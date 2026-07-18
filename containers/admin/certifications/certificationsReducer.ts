@@ -57,8 +57,16 @@ const adminCertificationsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+      .addCase(fetchCertificationsData.pending, (state) => {
+        state.status = "loading";
+      })
       .addCase(fetchCertificationsData.fulfilled, (state, action) => {
+        state.status = "success";
         state.data = action.payload;
+      })
+      .addCase(fetchCertificationsData.rejected, (state, action) => {
+        state.status = "error";
+        state.message = (action.payload as any)?.message || "Error fetching certifications";
       })
       .addCase(saveCertificationData.pending, (state) => {
         state.status = "loading";

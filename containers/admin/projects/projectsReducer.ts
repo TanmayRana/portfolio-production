@@ -53,8 +53,16 @@ const adminProjectsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+      .addCase(fetchProjectsData.pending, (state) => {
+        state.status = "loading";
+      })
       .addCase(fetchProjectsData.fulfilled, (state, action) => {
+        state.status = "success";
         state.data = action.payload;
+      })
+      .addCase(fetchProjectsData.rejected, (state, action) => {
+        state.status = "error";
+        state.message = (action.payload as any)?.message || "Error fetching projects";
       })
       .addCase(saveProjectData.pending, (state) => {
         state.status = "loading";

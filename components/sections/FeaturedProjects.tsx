@@ -15,11 +15,10 @@ export default function FeaturedProjects() {
   console.log("projects", projects);
 
   useEffect(() => {
-    // Only fetch if data is not already loaded
-    if (projects.length === 0 && status !== "loading") {
+    if (status === "idle") {
       dispatch(fetchProjectsData());
     }
-  }, [projects.length, status, dispatch]);
+  }, [status, dispatch]);
 
   if (status === "loading" && projects.length === 0) {
     return (

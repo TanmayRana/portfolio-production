@@ -142,13 +142,10 @@ export default function WorkExperience() {
   const lineScale = useSpring(scrollYProgress, { stiffness: 90, damping: 22 });
 
   useEffect(() => {
-    if (
-      status === "idle" ||
-      (dbExperiences.length === 0 && status !== "loading")
-    ) {
+    if (status === "idle") {
       dispatch(fetchWorkExperienceData());
     }
-  }, [dispatch, status, dbExperiences.length]);
+  }, [dispatch, status]);
 
   const experiences = dbExperiences.filter((e) => e.companyName?.trim());
 

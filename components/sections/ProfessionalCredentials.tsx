@@ -123,13 +123,10 @@ export default function ProfessionalCredentials() {
   const SPEED = 0.05; // px per ms
 
   useEffect(() => {
-    if (
-      status === "idle" ||
-      (certifications.length === 0 && status !== "loading")
-    ) {
+    if (status === "idle") {
       dispatch(fetchCertificationsData());
     }
-  }, [dispatch, status, certifications.length]);
+  }, [dispatch, status]);
 
   /* Auto-play slider — advances one card every 3 seconds, scrolls back to start when at end */
   useEffect(() => {
