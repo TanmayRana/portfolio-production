@@ -10,7 +10,7 @@ import Contact from "@/components/sections/Contact";
 import FloatingNavbar from "@/components/ui/FloatingNavbar";
 
 const page = () => {
-  console.log("Testing production.........");
+  console.log("Testing production...........");
 
   return (
     <main className="h-screen w-full overflow-y-scroll overflow-x-hidden snap-y snap-mandatory scroll-smooth relative">
