@@ -3,8 +3,6 @@ version: "3.9"
 services:
   nginx:
     image: ghcr.io/tanmayrana/portfolio-nginx:latest
-    build:
-      context: ./nginx
     container_name: nginx
     restart: always
     ports:
@@ -17,9 +15,6 @@ services:
 
   next1:
     image: ghcr.io/tanmayrana/portfolio-app:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
     container_name: next1
     restart: always
     expose:
@@ -35,9 +30,6 @@ services:
 
   next2:
     image: ghcr.io/tanmayrana/portfolio-app:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
     container_name: next2
     restart: always
     expose:
